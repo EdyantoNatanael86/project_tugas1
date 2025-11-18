@@ -6,47 +6,7 @@ public class Menu {
     //Membuat deklarasi untuk pilihan menu dan harganya
      double makanan;
      double minuman;
-     Int jumlah:
-     
-     public Menu(){
-     //membuat atribut dari deklarasi makanan beserta harganya
-          Menu makanan = new Menu();
-          makanan.sotoAyam = 15000.0;
-          makanan.mieAyam = 15000.0;
-          makanan.bakso = 15000.0;
-          makanan.nasiGoreng = 15000.0;
-          makanan.nasiPadang = 20000.0;
-
-      //membuat sebuah method 
-          System.out.println("====List Makanan====/n");
-          System.out.println("Soto Ayam = Rp " + sotoAyam);
-          System.out.println("Mie Ayam = Rp " + mieAyam);
-          System.out.println("Bakso = Rp " + bakso);
-          System.out.println("Nasi Goreng = Rp " + nasiGoreng);
-          System.out.println("Nasi Padang = Rp " + nasiPadang);
-          
-    //membuat atribut dari deklarasi minuman beserta harganya
-          Menu minuman = new Menu();
-          minuman.jusApel = 15000.0;
-          minuman.jusMelon = 15000.0;
-          minuman.esJeruk = 12000.0;
-          minuman.esTeh = 10000.0;
-          minuman.jusNanas = 15000.0
-          
-    //membuat sebuah method 
-          System.out.println("====List Minuman====/n");
-          System.out.println("Jus Apel = Rp " + jusApel);
-          System.out.println("Jus Melon = Rp " + jusMelon);
-          System.out.println("Es Jeruk = Rp " + esJeruk);
-          System.out.println("Es Teh = Rp " + esTeh);
-          System.out.println("Jus Nanas = Rp " + jusNanas);
-          
-          
-
+     Int jumlah;
           
 
      }
-     
-    // "Makanan" atau "Minuman"
-
-    //membuat Method untuk variabel yang tersedia di deklarasi
