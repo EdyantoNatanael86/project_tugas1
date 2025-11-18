@@ -2,8 +2,22 @@ package.tugas1.source.code;
 
 import java.utill.Arrays;
 
-public Main(){
+public class Main{
+          Menu makanan = new Menu();
+          makanan.sotoAyam = 15000.0;
+          makanan.mieAyam = 15000.0;
+          makanan.bakso= 13000.0;
+          makanan.nasiGoreng= 15000.0;
+          makanan.nasipadang = 20000.0;
 
+          Menu minuman = new Menu();
+          minuman.jusApel = 14000.0;
+          minuman.jusMelon = 15000.0;
+          minuman.esTeh= 10000.0;
+          minuman.esCampur= 15000.0;
+          minuman.americanoAsli = 20000.0;
+          
+public makanan(){
 //membuat sebuah method 
           System.out.println("====List Makanan====/n");
           System.out.println("Soto Ayam = Rp " + sotoAyam);
@@ -11,7 +25,8 @@ public Main(){
           System.out.println("Bakso = Rp " + bakso);
           System.out.println("Nasi Goreng = Rp " + nasiGoreng);
           System.out.println("Nasi Padang = Rp " + nasiPadang);
-
+}
+public minuman(){
 //membuat sebuah method 
           System.out.println("====List Minuman====/n");
           System.out.println("Jus Apel = Rp " + jusApel);
@@ -20,5 +35,10 @@ public Main(){
           System.out.println("Es Teh = Rp " + esTeh);
           System.out.println("Jus Nanas = Rp " + jusNanas);
 }
+public static void main (String[] args){
 
+          Scanner input = new Scanner(System.in);
+          System.out.println("Masukkan pilihan menu");
+          double makanan = input.NextDouble();
+          
 }
