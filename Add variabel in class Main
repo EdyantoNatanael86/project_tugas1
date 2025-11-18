@@ -4,8 +4,6 @@ import java.utill.Arrays;
 
 public Main(){
 
-public Menu {
-
 //membuat sebuah method 
           System.out.println("====List Makanan====/n");
           System.out.println("Soto Ayam = Rp " + sotoAyam);
@@ -13,6 +11,14 @@ public Menu {
           System.out.println("Bakso = Rp " + bakso);
           System.out.println("Nasi Goreng = Rp " + nasiGoreng);
           System.out.println("Nasi Padang = Rp " + nasiPadang);
+
+//membuat sebuah method 
+          System.out.println("====List Minuman====/n");
+          System.out.println("Jus Apel = Rp " + jusApel);
+          System.out.println("Jus Melon = Rp " + jusMelon);
+          System.out.println("Es Jeruk = Rp " + esJeruk);
+          System.out.println("Es Teh = Rp " + esTeh);
+          System.out.println("Jus Nanas = Rp " + jusNanas);
 }
 
 }
