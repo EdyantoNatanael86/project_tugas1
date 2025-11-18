@@ -1,1 +1,18 @@
+package.tugas1.source.code;
 
+import java.utill.Arrays;
+
+public Main(){
+
+public Menu {
+
+//membuat sebuah method 
+          System.out.println("====List Makanan====/n");
+          System.out.println("Soto Ayam = Rp " + sotoAyam);
+          System.out.println("Mie Ayam = Rp " + mieAyam);
+          System.out.println("Bakso = Rp " + bakso);
+          System.out.println("Nasi Goreng = Rp " + nasiGoreng);
+          System.out.println("Nasi Padang = Rp " + nasiPadang);
+}
+
+}
