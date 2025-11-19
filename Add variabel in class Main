@@ -1,44 +1,44 @@
-package.tugas1.source.code;
+package tugas1.Source_code;
 
-import java.utill.Arrays;
+import java.util.Arrays;
 
 public class Main{
+      
+          public Main(){
           Menu makanan = new Menu();
           makanan.sotoAyam = 15000.0;
           makanan.mieAyam = 15000.0;
           makanan.bakso= 13000.0;
           makanan.nasiGoreng= 15000.0;
-          makanan.nasipadang = 20000.0;
+          makanan.nasiPadang = 20000.0;
 
           Menu minuman = new Menu();
           minuman.jusApel = 14000.0;
           minuman.jusMelon = 15000.0;
-          minuman.esTeh= 10000.0;
+          minuman.esJeruk= 10000.0;
           minuman.esCampur= 15000.0;
           minuman.americanoAsli = 20000.0;
           
-public makanan(){
-//membuat sebuah method 
           System.out.println("====List Makanan====/n");
-          System.out.println("Soto Ayam = Rp " + sotoAyam);
-          System.out.println("Mie Ayam = Rp " + mieAyam);
-          System.out.println("Bakso = Rp " + bakso);
-          System.out.println("Nasi Goreng = Rp " + nasiGoreng);
-          System.out.println("Nasi Padang = Rp " + nasiPadang);
-}
-public minuman(){
-//membuat sebuah method 
+          System.out.println("Soto Ayam = Rp " + makanan.sotoAyam);
+          System.out.println("Mie Ayam = Rp " + makanan.mieAyam);
+          System.out.println("Bakso = Rp " + makanan.bakso);
+          System.out.println("Nasi Goreng = Rp " + makanan.nasiGoreng);
+          System.out.println("Nasi Padang = Rp " + makanan.nasiPadang);
+      
+        //membuat sebuah method 
           System.out.println("====List Minuman====/n");
-          System.out.println("Jus Apel = Rp " + jusApel);
-          System.out.println("Jus Melon = Rp " + jusMelon);
-          System.out.println("Es Jeruk = Rp " + esJeruk);
-          System.out.println("Es Teh = Rp " + esTeh);
-          System.out.println("Jus Nanas = Rp " + jusNanas);
+          System.out.println("Jus Apel = Rp " + minuman.jusApel);
+          System.out.println("Jus Melon = Rp " + minuman.jusMelon);
+          System.out.println("Es Jeruk = Rp " + minuman.esJeruk);
+          System.out.println("Es Teh = Rp " + minuman.esCampur);
+          System.out.println("Jus Nanas = Rp " + minuman.americanoAsli);
 }
-public static void main (String[] args){
+        public static void main (String[] args){
 
           Scanner input = new Scanner(System.in);
           System.out.println("Masukkan pilihan menu");
-          double makanan = input.NextDouble();
+          double  = input.NextDouble();
           
+}
 }
