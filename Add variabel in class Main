@@ -1,6 +1,7 @@
 package tugas1.Source_code;
 
 import java.util.Arrays;
+import java.util.Scanner;
 
 public class Main{
       
@@ -20,21 +21,22 @@ public class Main{
           minuman.americanoAsli = 20000.0;
 
 //Menampilkan list Makanan, minuman beserta harganya
-          System.out.println("====List Makanan====/n");
+          System.out.println("====List Makanan====");
           System.out.println("Soto Ayam = Rp " + makanan.sotoAyam);
           System.out.println("Mie Ayam = Rp " + makanan.mieAyam);
           System.out.println("Bakso = Rp " + makanan.bakso);
           System.out.println("Nasi Goreng = Rp " + makanan.nasiGoreng);
           System.out.println("Nasi Padang = Rp " + makanan.nasiPadang);
        
-          System.out.println("====List Minuman====/n");
+          System.out.println("====List Minuman====");
           System.out.println("Jus Apel = Rp " + minuman.jusApel);
           System.out.println("Jus Melon = Rp " + minuman.jusMelon);
           System.out.println("Es Jeruk = Rp " + minuman.esJeruk);
-          System.out.println("Es Teh = Rp " + minuman.esCampur);
-          System.out.println("Jus Nanas = Rp " + minuman.americanoAsli);
+          System.out.println("Es Campur = Rp " + minuman.esCampur);
+          System.out.println("Jus Americano Asli = Rp " + minuman.americanoAsli);
 //input pilihan makanan dan minuman dengan jumlahnya
           System.out.println("Silahkan masukkan pilihan, menu maksimal 4 saja" );
+          Scanner input = new Scanner(System.in);  
           double masukan = input.nextDouble();
 
 //
