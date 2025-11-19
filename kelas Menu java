@@ -1,12 +1,19 @@
- package tugas1.Source_code;
+package tugas1.Source_code;
  
 //membuat class yang bernama "Menu"
 
 public class Menu {
     //Membuat deklarasi untuk pilihan menu dan harganya
-     double makanan;
-     double minuman;
-     Int jumlah;
-          
+     double sotoAyam;
+     double mieAyam;
+     double bakso;
+     double nasiGoreng;
+     double nasiPadang;
 
+     double jusApel;
+     double jusMelon;
+     double esJeruk;
+     double esCampur;
+     double americanoAsli;
+          
      }
