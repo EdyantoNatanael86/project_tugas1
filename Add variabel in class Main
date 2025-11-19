@@ -1,11 +1,12 @@
 package tugas1.Source_code;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class Main{
       
          public static void main (String [] args){
+          Scanner input = new Scanner(System.in);
+
           Menu makanan = new Menu();
           makanan.sotoAyam = 15000.0;
           makanan.mieAyam = 15000.0;
@@ -21,27 +22,81 @@ public class Main{
           minuman.americanoAsli = 20000.0;
 
 //Menampilkan list Makanan, minuman beserta harganya
-          System.out.println("====List Makanan====");
+          System.out.println("====List Makanan====\n");
           System.out.println("Soto Ayam = Rp " + makanan.sotoAyam);
           System.out.println("Mie Ayam = Rp " + makanan.mieAyam);
           System.out.println("Bakso = Rp " + makanan.bakso);
           System.out.println("Nasi Goreng = Rp " + makanan.nasiGoreng);
           System.out.println("Nasi Padang = Rp " + makanan.nasiPadang);
        
-          System.out.println("====List Minuman====");
+          System.out.println("====List Minuman====\n");
           System.out.println("Jus Apel = Rp " + minuman.jusApel);
           System.out.println("Jus Melon = Rp " + minuman.jusMelon);
           System.out.println("Es Jeruk = Rp " + minuman.esJeruk);
           System.out.println("Es Campur = Rp " + minuman.esCampur);
           System.out.println("Jus Americano Asli = Rp " + minuman.americanoAsli);
 //input pilihan makanan dan minuman dengan jumlahnya
-          System.out.println("Silahkan masukkan pilihan, menu maksimal 4 saja" );
-          Scanner input = new Scanner(System.in);  
-          double masukan = input.nextDouble();
+          System.out.println("\n Silahkan masukkan pilihan, (format: menu = jumlah) menu maksimal 4 saja, dipisah dengan koma" );
+          System.out.println("Contoh : Nasi Padang = 2, Es Campur = 1, dan seterusnya");
+          System.out.println("input :");
+          String line = input.NextLine();
+          double total = 0.0;
 
-//
+// parsing: pisah setiap item berdasarkan koma
+        String[] items = line.split(",");
+
+        for (String item : items) {
+            item = item.trim();
+            if (item.isEmpty()) continue;
+
+            // pisah nama dan jumlah berdasarkan '='
+            String[] pair = item.split("=");
+            if (pair.length != 2) {
+                System.out.println("Format salah untuk: \"" + item + "\" (harus Nama=Jumlah). Lewati item ini.");
+                continue;
+            }
+
+            String nama = pair[0].trim();
+            String jumlahStr = pair[1].trim();
+            double jumlah;
+            try {
+                jumlah = Double.parseDouble(jumlahStr);
+            } catch (NumberFormatException e) {
+                System.out.println("Jumlah bukan angka untuk: \"" + item + "\". Lewati item ini.");
+                continue;
+            }
+
+            // cocokkan nama (case-insensitive) dan tambahkan subtotal ke total
+            if (nama.equalsIgnoreCase("Soto Ayam")) {
+                total += makanan.sotoAyam * jumlah;
+            } else if (nama.equalsIgnoreCase("Mie Ayam")) {
+                total += makanan.mieAyam * jumlah;
+            } else if (nama.equalsIgnoreCase("Bakso")) {
+                total += makanan.bakso * jumlah;
+            } else if (nama.equalsIgnoreCase("Nasi Goreng")) {
+                total += makanan.nasiGoreng * jumlah;
+            } else if (nama.equalsIgnoreCase("Nasi Padang")) {
+                total += makanan.nasiPadang * jumlah;
+            } else if (nama.equalsIgnoreCase("Jus Apel")) {
+                total += minuman.jusApel * jumlah;
+            } else if (nama.equalsIgnoreCase("Jus Melon")) {
+                total += minuman.jusMelon * jumlah;
+            } else if (nama.equalsIgnoreCase("Es Jeruk")) {
+                total += minuman.esJeruk * jumlah;
+            } else if (nama.equalsIgnoreCase("Es Campur")) {
+                total += minuman.esCampur * jumlah;
+            } else if (nama.equalsIgnoreCase("Americano Asli")) {
+                total += minuman.americanoAsli * jumlah;
+            } else {
+                System.out.println("Barang tidak ditemukan: \"" + nama + "\". Lewati item ini.");
+            }
+        }
+
+        System.out.println("\nTotal Harga = Rp " + total);
+        input.close();
+    }
 }
-       
-          
-}
-}
+            
+         
+
+
