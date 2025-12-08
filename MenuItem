@@ -1,7 +1,7 @@
 package tugas3.com;
 
 public abstract class MenuItem{
-      String nama;
+      protected String nama;
 
       public MenuItem(String nama){
             this.nama = nama;
@@ -13,10 +13,11 @@ public abstract class MenuItem{
             this.kategori = kategori;
 }
 
-}
+      public void tampilkan(){
+            System.out.println("List Menu makanan");
+            System.out.println("List Menu makanan");
+            System.out.println("List Menu makanan");
+            
       
-
-}
-
 
 }
