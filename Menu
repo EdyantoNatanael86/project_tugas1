@@ -1,6 +1,7 @@
 package tugas3.com:
 
-public abstract class Menu{
+public Menu extends MenuItem{
+
 
 
 
