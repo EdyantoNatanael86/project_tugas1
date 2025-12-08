@@ -1,4 +1,9 @@
 package tugas3.com
 
-public Minuman extends MenuItem(){
+public class Minuman extends MenuItem(){
+
+    public Minuman(String nama){
+        super(nama);
+    }
+}
 
