@@ -1,6 +1,13 @@
 package tugas3.com;
 
 public abstract class MenuItem{
+      protected void TampilMenu(){
+      String makanan;
+      String minuman;
+      String kategori;
+      
+
+}
 
 
 }
