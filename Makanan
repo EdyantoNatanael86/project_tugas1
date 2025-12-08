@@ -1,0 +1,8 @@
+package tugas3.com;
+
+//inheritance 
+public class makanan extends MenuItem{
+
+    public makanan (String nama){
+        this.nama 
+}
