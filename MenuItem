@@ -1,10 +1,19 @@
 package tugas3.com;
 
 public abstract class MenuItem{
-      protected void TampilMenu(){
-      String makanan;
-      String minuman;
-      String kategori;
+      String nama;
+
+      public MenuItem(String nama){
+            this.nama = nama;
+}
+      public MenuItem(double harga){
+            this.harga = harga;
+}
+      public MenuItem(String kategori){
+            this.kategori = kategori;
+}
+
+}
       
 
 }
