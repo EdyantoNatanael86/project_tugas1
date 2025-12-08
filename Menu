@@ -1,6 +1,24 @@
 package tugas3.com:
 
-public Menu extends MenuItem{
+import java.util.scanner;
+
+public class Menu{
+
+    public static void main(String[]args){
+
+      //membuat objek dari kelas makanan dan minuman serta diskon
+      Makanan nasiPadang = new Makanan("Nasi Padang");
+      Makanan sotoAyam = new Makanan("Soto Ayam");
+      Makanan mieAyam = new Makanan("Mie Ayam");
+      Makanan gulaiTunjang = new Makanan("Gulai Tunjang ");
+
+      Minuman jusApel = new  Minuman("Jus Apel");
+      Minuman tehManis = new  Minuman("Teh Manis");
+      Minuman esKelapa = new  Minuman("Es Kelapa");
+      Minuman esJeruk = new  Minuman("Es Jeruk");
+
+      
+      
 
 
 
