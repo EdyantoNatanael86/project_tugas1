@@ -5,11 +5,11 @@ public abstract class MenuItem{
       private double harga;
       private String kategori;
       public MenuItem(String nama){
-            this.nama = nama;
-            this.harga=  
+            this.nama = nama; 
 }
       public MenuItem(double harga){
-            this.harga = harga;
+            if (harga >=0) ;
+
 }
       public MenuItem(String kategori){
             this.kategori = kategori;
