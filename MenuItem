@@ -1,9 +1,9 @@
 package tugas3.com;
 
 public abstract class MenuItem{
-      private String nama;
-      private double harga;
-      private String kategori;
+      String nama;
+      double harga;
+      String kategori;
       public MenuItem(String nama){
             this.nama = nama; 
 }
