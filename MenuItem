@@ -4,23 +4,10 @@ public abstract class MenuItem{
       String nama;
       double harga;
       String kategori;
-      public MenuItem(String nama){
-            this.nama = nama; 
-}
-      public MenuItem(double harga){
-            if (harga >=0) ;
 
-}
-      public MenuItem(String kategori){
-            this.kategori = kategori;
-}
-
-      public void tampilMenu(){
-              System.out.println("Soto Ayam = " + );
-            System.out.println("Mie Ayam = " + );
-            System.out.println("Mie Ayam = " + );
-            System.out.println("Mie Ayam = " + );
+public static void tampilMenu(String nama, double harga, String kategori){
             
+      }
             
       
 
