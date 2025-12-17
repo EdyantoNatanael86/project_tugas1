@@ -3,6 +3,12 @@ package tugas3.com;
 //inheritance 
 public class makanan extends MenuItem{
 
-    public makanan (String nama){
-        this.nama 
+    public void tampilMenu (String nama, double harga, String kategori){
+            Makanan a1 = new Makanan;
+            a1.nasiPadang = 19000.0;
+            a1. = 19000.0;
+            a1.nasiPadang = 19000.0;
+            a1.nasiPadang = 19000.0;
+            
+    
 }
